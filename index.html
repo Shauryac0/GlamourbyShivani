@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamour By Shivani - Salon in Unnao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --accent: #d4a373;
+            --bg: #faf7f5;
+            --text: #333;
+        }
+        body {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+        header h1 {
+            font-family: "Playfair Display", serif;
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--accent);
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+        }
+        .hero {
+            height: 650px;
+	    width: 1300px;
+            background: url("https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/refs/heads/main/bg.png") center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px;
+	    animation: fadeIn 1s ease-out;
+        }
+        .hero h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 3rem;
+            color: #CF2BC1;
+            margin: 0;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        .about, .services, .gallery, .contact, .catalogue {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+        }
+	.catalogue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .catalogue-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            padding: 10px;
+            border: 1px solid #e9e9e9;
+            border-radius: 10px;
+        }
+	.service-grid img {
+            width: 25%;
+            border-radius: 10px;
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #111;
+            color: #eee;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Glamour By Shivani</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+	    <a href="#catalogue">Catalogue</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Enhance Your Beauty</h2>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Based in Unnao, Glamour By Shivani is a professional bridal makeup artist who has been in the makeup scene since 2020, providing brides across the city and beyond with their dream bridal makeover. She covers everything from bridal makeup to styling and works with the passion to make her clients look and feel like true princesses on their special day. So if you have a wedding coming up and are on the search for a professional makeup artist to do your bridal glam and styling, then she can be a good pick.</p>
+	<h3 id="products-used-by-glamour-by-shivani"><strong>Products Used By Glamour By Shivani</strong></h3>
+<ul>
+<li>Mac</li>
+<li>Nars</li>
+<li>Estee Lauder</li>
+<li>Forever 52</li>
+<li>Clinique</li>
+<li>Pac</li>
+<li>Laura Mercier</li>
+<li>Charlotte Tilbury</li>
+<li>Makeup Studio</li>
+</ul>
+<h3 id="services-provided-by-glamour-by-shivani"><strong>Services Provided By Glamour By Shivani</strong></h3>
+<ul>
+<li>Bridal Makeup</li>
+<li>Engagement Makeup</li>
+<li>Party Makeup</li>
+<li>HD Makeup</li>
+<li>Airbrush Makeup</li>
+<li>Hairstyling</li>
+<li>Draping</li>
+<li>Extensions</li>
+<li>False Lashes</li>
+</ul>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="service-grid img">
+            <div class="service-card"><p style="font-size: 25px;">Hair Styling.</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/refs/heads/main/glamour-by-shivani-badaura-unnao-salons-888dwa1a49.avif" /></div>
+            <div class="service-card"><p style="font-size: 25px;">Bridal Make-up.</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/refs/heads/main/glamour-by-shivani-badaura-unnao-salons-fxyou9mwcf.jpg" /></div>
+            <div class="service-card"><p style="font-size: 25px;">Facial.</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/refs/heads/main/glamour-by-shivani-badaura-unnao-salons-vigrrxzq2w.jpg" /></div>
+            <div class="service-card"><p style="font-size: 25px;">Nail Art.</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/refs/heads/main/glamour-by-shivani-badaura-unnao-salons-y37m8eojo1.jpg" height="400" /></div>
+            <div class="service-card"><p style="font-size: 25px;">Spa Treatment.</p></div>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/refs/heads/main/download.jpg" width="500" height="200">
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-4gr5s68arg.jpg" height="400" />
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-alrt3tr2f7.jpg" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-blmroahsrh.jpg" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-r1za6jsuth.jpg" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-t8cpi5nq3c.jpg" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-uk9iz14cl1.jpg" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-5jua9zba9o.avif" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-m1ynrtd3cf.avif" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-ov56kpq65q.avif" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-z48py6gzrw.avif" height="400"/>
+            <img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/d2c02a38607643a1085197dc40e363c2d6e3ed98/glamour-by-shivani-badaura-unnao-salons-z6jy4uhx8s.avif" height="400"/>
+        </div>
+    </section>
+
+<section id="catalogue" class="catalogue">
+        <h2>Catalogue</h2>
+        <div class="service-grid img">
+            <div class="service-card">
+		<h1>Bridal Makeup (Outstation)</h1>
+		<p style="font-size: 25px;">₹10,000 onwards / session</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/fbd9d046dd9b1b8a91131f49dc9b5836e0aaac7b/engagement-makeup-2228042056-lyud172h.jpg" /></div>
+            <div class="service-card">
+		<h1>Party Makeup for Family</h1>
+		<p style="font-size: 25px;">₹1,500 onwards / session</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/fbd9d046dd9b1b8a91131f49dc9b5836e0aaac7b/party-makeup-for-family-2228042054-tykhu89x.jpg" /></div>
+            <div class="service-card">
+		<h1>Bridal Makeup Artist</h1>
+		<p style="font-size: 25px;">₹6,000 onwards / session</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/fbd9d046dd9b1b8a91131f49dc9b5836e0aaac7b/bridal-makeup-outstation-2228042055-h9jmlhye.jpg" /></div>
+            <div class="service-card">
+		<h1>Engagement Makeup</h1>
+		<p style="font-size: 25px;">₹5,000 onwards / session</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/fbd9d046dd9b1b8a91131f49dc9b5836e0aaac7b/bridal-makeup-artist-2228079421-37e9vx1i.jpg" /></div>
+            <div class="service-card">
+		<h1>Airbrush Makeup</h1>
+		<p style="font-size: 25px;">₹10,000 onwards / session</p>
+		<img src="https://raw.githubusercontent.com/Shauryac0/GlamourbyShivani/fbd9d046dd9b1b8a91131f49dc9b5836e0aaac7b/airbrush-makeup-2228042057-7zu2ikb8.jpg" /></div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Address: Patel Enterprise Building (1st Floor), Near Arora Resort, Kabba Kheda, Unnao, India, 209801</p>
+        <p>Phone: +91 79471 24532</p>
+	<p> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ +91 94737 78543</p>
+	<p>Email: shivani021.saanvi@gmail.com</p>
+        <p>
+            <a href="https://maps.app.goo.gl/dAw84a3o8gHRybup9" target="_blank">Google Maps</a>
+        </p>
+        <p>
+            <a href="https://www.instagram.com/glamourbyshivani_unnao/?hl=en" target="_blank">Instagram</a>
+        </p>
+        <p>
+            <a href="https://www.justdial.com/Unnao/Glamour-By-Shivani-Near-Arora-Resort-Kabba-Khera/9999P5152-5152-201229192519-E7R6_BZDET#">Justdial</a>
+        </p>
+        <p>
+            <a href="https://www.wedmegood.com/profile/Glamour-by-Shivani-4697791">Wedmegood</a>
+        </p>
+        <p>
+            <a href="https://www.facebook.com/shivanisingh021/?locale=hi_IN">Facebook</a>
+        </p>
+    </section>
+
+    <footer>
+        © 2025 Glamour By Shivani
+    </footer>
+</body>
+</html>
